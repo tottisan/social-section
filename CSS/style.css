@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-size: 0.93rem;
+  font-family: 'Spartan', sans-serif;
+  background: white;
+  padding: 4em 2em;
+}
+
+body > header .column h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #502050;
+}
+
+body > header .column > p {
+  color: #937b92;
+}
+
+body > header .column .rated p {
+  color: #502050;
+  font-weight: 700;
+}
+
+body main section .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 2em;
+  background: #502050;
+}
+
+body main section .card .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+}
+
+body main section .card .header .avatar img {
+  width: 3em;
+  border-radius: 50%;
+  margin-right: 2em;
+}
+
+body main section .card .header .info h2 {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.3em;
+}
+
+body main section .card .header .info p {
+  color: #ee68a4;
+}
+
+body main section .card .footer .quote {
+  color: #f7f2f7;
+}
+
+@media (min-width: 320px) {
+  body > header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  body > header .column {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  body > header .column h1 {
+    font-size: 2rem;
+    margin-bottom: 0.6em;
+  }
+  body > header .column .rated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+  body > header .column .rated img {
+    margin-bottom: 1em;
+  }
+  body main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main section .card {
+    height: 16.53em;
+    max-width: 24.8em;
+    margin-bottom: 1.5em;
+  }
+}
