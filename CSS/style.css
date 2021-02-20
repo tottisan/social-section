@@ -57,7 +57,7 @@ body main section .card .header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex: 1 1 auto;
+  flex: 2 1 auto;
 }
 
 body main section .card .header .avatar img {
@@ -74,6 +74,10 @@ body main section .card .header .info h2 {
 
 body main section .card .header .info p {
   color: #ee68a4;
+}
+
+body main section .card .footer {
+  flex: 1 1 auto;
 }
 
 body main section .card .footer .quote {
@@ -115,5 +119,65 @@ body main section .card .footer .quote {
     height: 16.53em;
     max-width: 24.8em;
     margin-bottom: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  body > header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+  }
+  body > header .column {
+    text-align: start;
+    margin: 0;
+  }
+  body > header .column h1 {
+    font-size: 3rem;
+  }
+  body > header .column .rated {
+    flex-direction: row;
+    align-items: center;
+  }
+  body > header .column .rated img {
+    margin: 0;
+  }
+  body > header .column .rated.start {
+    justify-content: flex-start;
+  }
+  body > header .column .rated.center {
+    justify-content: center;
+  }
+  body > header .column .rated.end {
+    justify-content: flex-end;
+  }
+  body > header .column .rated-star {
+    margin-right: 1em;
+  }
+  body > header .products {
+    flex: 0 1 37%;
+    margin-right: 15em;
+  }
+  body > header .reviews {
+    flex: 0 1 30%;
+  }
+  body main section {
+    flex-direction: row;
+    height: 19em;
+  }
+  body main section .card {
+    margin: 0 1.5em 0 0;
+  }
+  body main section .card.start {
+    align-self: flex-start;
+  }
+  body main section .card.center {
+    align-self: center;
+  }
+  body main section .card.end {
+    align-self: flex-end;
+  }
+  body main section .card:last-child {
+    margin: 0;
   }
 }
